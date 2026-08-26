@@ -1,0 +1,36 @@
+:root{
+  --sage-50:#f1f5ef; --sage-100:#dfe9da; --sage-300:#a9c29c;
+  --sage-500:#6f8f5f; --sage-700:#465c3a; --sage-900:#26321f;
+  --clay-500:#c17a54; --clay-700:#8a5539;
+  --cream:#faf8f3; --ink:#2b2a26; --ink-soft:#6b685f;
+  --line:#e4e0d6; --card:#ffffff; --danger:#b3492f;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:var(--cream); color:var(--ink);
+}
+.wrap{max-width:520px;margin:0 auto;padding:28px 20px 80px;}
+h1{font-family:'Iowan Old Style','Palatino Linotype',Georgia,serif;font-size:26px;color:var(--sage-900);margin:0 0 6px;}
+.sub{color:var(--ink-soft);font-size:13.5px;line-height:1.5;margin:0 0 22px;}
+label{display:block;font-size:12px;color:var(--ink-soft);margin-bottom:5px;font-weight:600;}
+input,textarea{
+  width:100%;font-size:15px;padding:10px 12px;border:1px solid var(--line);
+  border-radius:9px;background:var(--sage-50);color:var(--ink);margin-bottom:12px;
+}
+input:focus,textarea:focus{outline:none;border-color:var(--sage-500);background:#fff;}
+button,.btn{
+  font-size:14.5px;font-weight:600;border:none;border-radius:9px;padding:11px 16px;
+  cursor:pointer;background:var(--sage-700);color:#fff;display:inline-block;text-decoration:none;
+}
+button.secondary,.btn.secondary{background:transparent;color:var(--sage-700);border:1px solid var(--line);}
+button.danger{background:transparent;color:var(--danger);border:1px solid #eed4cc;}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:12px;}
+.err{color:var(--danger);font-size:12.5px;margin:-6px 0 12px;}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;}
+.topbar a{font-size:13px;color:var(--ink-soft);text-decoration:none;}
+.badge{font-size:11px;font-weight:600;padding:3px 9px;border-radius:20px;background:var(--sage-100);color:var(--sage-700);}
+.badge.pro{background:#f7ece3;color:var(--clay-700);}
+.limit-banner{background:var(--sage-900);color:#fff;border-radius:12px;padding:14px 16px;margin-bottom:18px;font-size:13.5px;line-height:1.5;}
+.limit-banner a{color:var(--sage-300);}
